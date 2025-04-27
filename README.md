@@ -26,6 +26,16 @@ Those were filtered out and the remaining data sent to a model ( RandomForest ) 
 
 There was a map included in png format that gave us the ability to figure out navigable streets
 
-The ultimate solution was to construct a graph that could inform the agent where they could go.  Predetermined checkpoints were set around the city and the agent walked through them and sent a prediction once they found to successive signals > -125.
+The ultimate solution was to construct a graph that could inform the agent where they could go.  Four checkpoints were set around the city and the agent walked through them and sent a prediction once they found two successive signals > -125.  The agent ceased walking after the prediction.
+
+Pseudocode:
+
+For each path
+  - build spanning tree
+  - determine path
+  - At each point
+    - measure rssi
+    - if this is the second successive rssi > -125, make a prediction and stop
+      
 
 
