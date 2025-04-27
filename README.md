@@ -38,4 +38,8 @@ For each path
     - if this is the second successive rssi > -125, make a prediction and stop
       
 
-
+# Key insights
+  - Using the map helped
+    - determine walkable areas
+    - determine radius thresholds during training along with rssi measurements
+    - map out walking paths
