@@ -1,0 +1,10 @@
+requests
+fastapi
+pydantic
+asyncpg
+uvicorn
+numpy
+Pillow
+pandas
+scikit_learn
+matplotlib
